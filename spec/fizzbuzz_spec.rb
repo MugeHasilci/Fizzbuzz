@@ -17,4 +17,9 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
     expect(fizzbuzz(30)).to eq 'fizzbuzz'
   end
+
+  it "return the number if it's not divable by 3 nor 5" do
+    expect(fizzbuzz(4)).to eq 4
+    expect(fizzbuzz(16)).to eq 16
+  end
 end

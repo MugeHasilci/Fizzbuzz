@@ -1,5 +1,6 @@
 
 def fizzbuzz(number)
-return "buzz"   if number % 5 == 0
-  "fizz"
+  return 'fizzbuzz' if (number % 5).zero? && (number % 3).zero?
+  return 'buzz' if (number % 5).zero?
+  'fizz'
 end
